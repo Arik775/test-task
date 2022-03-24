@@ -1,7 +1,18 @@
 .container {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-     font-family: 'Roboto', sans-serif;
-
+    
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
      margin-left: 8rem;
      margin-top: 5rem;
 }
+
+#button {
+
+    margin-left: 140px;
+    width: 139px;
+    height: 52px;
+
+    background: #FFE783;
+    border-radius: 3px;
+}
+

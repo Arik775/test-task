@@ -1,19 +1,18 @@
 .container {
     height: 65px;
 
-    .div1 {
-        width: 8rem;
+    .p {
+        width: 140px;
         float: left;
-    }
-
-    .div2 {
-        float: left;
-        height: 51px;
-        width: 500px;
     }
 
     #inputField {
-        height: 40px;
+        float: left;
+        height: 44px;
         width: 500px;
+        background: #FFFFFF;
+        border: 1px solid #C3C3C3;
+        box-sizing: border-box;
+        border-radius: 3px;
     }
 }

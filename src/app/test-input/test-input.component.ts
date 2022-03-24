@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test-input',
@@ -9,7 +9,12 @@ export class TestInputComponent implements OnInit {
 
   constructor() { }
 
+  @Input() textComp: string = 'Имя'
+
+
+
   ngOnInit(): void {
+
   }
 
 }

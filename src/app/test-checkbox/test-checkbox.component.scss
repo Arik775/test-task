@@ -1,15 +1,29 @@
 .container {
-    height: 65px;
+
+    height: 240px;
 
     .p {
-        width: 8rem;
+        width: 140px;
         float: left;
     }
 
     .inputField {
         float: left;
         margin-top: 14px;
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #C3C3C3;
+        box-sizing: border-box;
+        border-radius: 3px;
+
+        .boxname {
+            width: 205px;
+        }
     }
+}
+
+.boxcontainer {
+    float: left;
+    height: 40px;
+    width: 240px;
 }

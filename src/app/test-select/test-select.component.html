@@ -1,7 +1,7 @@
 <div class="container">
-    <p class="p">КРя</p>
+    <p class="p">{{ textComp }}</p>
 
     <select class="inputField">
-        <option>аофлоццфлоаф</option>
+        <option class="option" *ngFor="let item of arrayOptions">{{ item }}</option>
     </select>
 </div>

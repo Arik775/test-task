@@ -1,5 +1,19 @@
 <div class="container">
-    <p class="p">Навыки</p>
+    <div>
+        <p class="p">Навыки</p>
+    </div>
 
-    <input type="checkbox" class="inputField">
+    <div style="width: 500px; height: 174px; margin-left: 140px;">
+        <div class="boxcontainer" *ngFor="let item of checkboxArray">
+            <input type="checkbox" class="inputField">
+            <p class="boxname">{{ item }}</p>
+        </div>
+        
+        <div class="boxcontainer">
+        <input type="checkbox" class="inputField">
+        <p><strong>Выделить всё</strong></p>
+        </div>
+
+    </div>
+
 </div>
