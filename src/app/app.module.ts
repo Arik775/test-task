@@ -6,6 +6,9 @@ import { TestInputComponent } from './test-input/test-input.component';
 import { TestSelectComponent } from './test-select/test-select.component';
 import { TestNumberComponent } from './test-number/test-number.component';
 import { TestCheckboxComponent } from './test-checkbox/test-checkbox.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSelectModule} from "@angular/material/select";
+import { GeneratorComponent } from './generator/generator.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,13 @@ import { TestCheckboxComponent } from './test-checkbox/test-checkbox.component';
     TestInputComponent,
     TestSelectComponent,
     TestNumberComponent,
-    TestCheckboxComponent
+    TestCheckboxComponent,
+    GeneratorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

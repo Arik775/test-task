@@ -1,12 +1,12 @@
 .container {
     height: 65px;
 
-    .p {
+  .p {
         width: 140px;
         float: left;
-    }
+  }
 
-    #inputField {
+  #inputField {
         float: left;
         height: 44px;
         width: 500px;
@@ -14,5 +14,36 @@
         border: 1px solid #C3C3C3;
         box-sizing: border-box;
         border-radius: 3px;
-    }
+  }
+
+  .RemoveButton {
+    opacity: 0;
+    width: 26px;
+    height: 26px;
+  }
+  .RemoveButton:hover {
+    opacity: 100;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #FC6363;
+    background: #FC6363;
+    border-radius: 3px;
+  }
+
+  .PushButton {
+    opacity: 0;
+    width: 26px;
+    height: 26px;
+  }
+  .PushButton:hover {
+    opacity: 100;
+    width: 26px;
+    height: 26px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
 }
