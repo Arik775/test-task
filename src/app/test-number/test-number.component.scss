@@ -1,18 +1,37 @@
 .container {
-    height: 65px;
-    
-    .p {
-        width: 140px;
-        float: left;
-    }
-    
-    .inputField {
-        float: left;
-        width: 70px;
-        height: 44px;
-        background: #FFFFFF;
-        border: 1px solid #C3C3C3;
-        box-sizing: border-box;
-        border-radius: 3px;
-    }
+  height: 65px;
+  margin: 0px;
+
+  .p {
+    display: flex;
+    width: 140px;
+    height: 44px;
+    float: left;
+  }
+
+  .inputField {
+    display: flex;
+    float: left;
+    width: 70px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #C3C3C3;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  .btn-group {
+    display: none;
+  }
+
+  &:hover .btn-group {
+    display: inline-flex;
+    float: right;
+    vertical-align: top !important;
+  }
+
+  .required {
+    color: red;
+  }
+
 }

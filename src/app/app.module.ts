@@ -9,6 +9,8 @@ import { TestCheckboxComponent } from './test-checkbox/test-checkbox.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from "@angular/material/select";
 import { GeneratorComponent } from './generator/generator.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,14 @@ import { GeneratorComponent } from './generator/generator.component';
     TestCheckboxComponent,
     GeneratorComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatSelectModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatSelectModule,
+        ReactiveFormsModule,
+        FormsModule,
+        NgbModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

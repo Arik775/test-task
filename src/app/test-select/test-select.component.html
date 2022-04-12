@@ -1,7 +1,20 @@
 <div class="container">
-    <p class="p">{{ textComp }}</p>
+  <label class="p">{{ compValues.label }}</label>
 
     <mat-select class="inputField">
-        <mat-option class="option" *ngFor="let item of arrayOptions">{{ item }}</mat-option>
+        <mat-option class="option" *ngFor="let item of compValues.choices">{{ item }}</mat-option>
     </mat-select>
+
+  <div class="btn-group" role="group" aria-label="Configures">
+    <button class="btn-secondary" (click)="moveUp()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <button class="btn-secondary" (click)="moveDown()">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <button class="btn-secondary" (click)="remove()">
+      <i class="fas fa-chevron-minus"></i>
+    </button>
+  </div>
+
 </div>

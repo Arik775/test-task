@@ -1,8 +1,22 @@
 <div class="container">
-  <p class="p">{{ textComp }}</p>
+  <label class="p">{{ compValues.label }}
+    <span class="required" *ngIf="compValues.required">*</span>
+  </label>
   <div>
-    <input id="inputField">
-    <button class="RemoveButton"></button>
-    <button class="PushButton"></button>
+    <input id="inputField" [placeholder]="compValues.placeholder">
+    <small *ngIf="compValues.description" class="description">{{ compValues.description }}</small>
   </div>
+
+  <div class="btn-group" role="group" aria-label="Configures">
+    <button class="btn-secondary" (click)="moveUp()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <button class="btn-secondary" (click)="moveDown()">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <button class="btn-secondary" (click)="remove()">
+      <i class="fas fa-chevron-minus"></i>
+    </button>
+  </div>
+
 </div>

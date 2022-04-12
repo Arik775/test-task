@@ -1,5 +1,24 @@
 <div class="container">
-    <p class="p">Возраст</p>
+  <div class="p">
+      {{compValues.label}}
+      <span class="required" *ngIf="compValues.required">*</span>
+  </div>
 
-    <input type="number" class="inputField">
+  <input type="number" class="inputField" required="{{compValues.required}}">
+
+
+  <div class="btn-group" role="group" aria-label="Configures">
+    <button class="btn-secondary" (click)="moveUp()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <button class="btn-secondary" (click)="moveDown()">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <button class="btn-secondary" (click)="remove()">
+      <i class="fa-solid fa-minus"></i>
+    </button>
+  </div>
 </div>
+
+
+

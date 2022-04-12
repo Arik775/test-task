@@ -1,15 +1,21 @@
 .container {
-
-    height: 240px;
-
+    margin: 0px;
+    //height: 240px;
     .p {
+        display: flex;
         width: 140px;
+        height: 44px;
         float: left;
+    }
+
+    .boxcontainer {
+      display: flex;
+      flex: border-box;
     }
 
     .inputField {
         float: left;
-        //margin-top: 14px;
+        margin-top: 14px;
         width: 22px;
         height: 22px;
         border: 1px solid #C3C3C3;
@@ -20,7 +26,19 @@
             width: 205px;
         }
     }
+
+  .btn-group {
+    display: none;
+  }
+
+  &:hover .btn-group {
+    display: inline-flex;
+    float: right;
+    vertical-align: top !important;
+  }
+
 }
+
 
 .boxcontainer {
     float: left;

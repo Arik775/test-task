@@ -1,12 +1,13 @@
 .container {
     height: 65px;
-    
+    margin: 0px;
+
     .p {
         width: 140px;
         float: left;
         height: 20px;
     }
-    
+
     .inputField {
         float: left;
         height: 44px;
@@ -26,5 +27,14 @@
         border-radius: 3px;
     }
 
-    
+  .btn-group {
+    display: none;
+  }
+
+  &:hover .btn-group {
+    display: inline-flex;
+    float: right;
+    vertical-align: top !important;
+  }
+
 }
