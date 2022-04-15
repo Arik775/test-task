@@ -34,12 +34,13 @@ import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
   //Variables for creating component
    public testField: TestField = {
     index: 0,
-    label: '',
-    description: '',
-    placeholder: '',
-    required: false,
-    componentClass: null,
-    isIncludeCheckAll: false
+     label: '',
+     description: '',
+     placeholder: '',
+     required: false,
+     choices: '',
+     componentClass: null,
+     isIncludeCheckAll: false
   }
 
   testArray = ''
@@ -75,7 +76,7 @@ import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
       description: this.testField.description,
       placeholder: this.testField.placeholder,
       required: this.testField.required,
-      choices: this.formBuilder.array(this.testArray.split(',')),
+      choices: this.testField.choices,
       isIncludeCheckAll: this.testField.isIncludeCheckAll
     }))
 

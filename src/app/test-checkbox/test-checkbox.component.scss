@@ -1,6 +1,8 @@
 .container {
     margin: 0px;
-    //height: 240px;
+    min-height: 40px;
+    display: flex;
+
     .p {
         display: flex;
         width: 140px;
@@ -9,13 +11,13 @@
     }
 
     .boxcontainer {
-      display: flex;
-      flex: border-box;
+      float: left;
+      height: 40px;
+      width: 240px;
     }
 
     .inputField {
         float: left;
-        margin-top: 14px;
         width: 22px;
         height: 22px;
         border: 1px solid #C3C3C3;
@@ -32,7 +34,7 @@
   }
 
   &:hover .btn-group {
-    display: inline-flex;
+    display: block;
     float: right;
     vertical-align: top !important;
   }
@@ -40,8 +42,4 @@
 }
 
 
-.boxcontainer {
-    float: left;
-    height: 40px;
-    width: 240px;
-}
+

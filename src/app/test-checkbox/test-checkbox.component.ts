@@ -21,7 +21,9 @@ export class TestCheckboxComponent implements OnInit {
     componentClass: null,
     isIncludeCheckAll: false
   }
-
+  get choicesArray() {
+    return this.compValues.choices?.split(',')
+  }
   ngOnInit(): void {
   }
 

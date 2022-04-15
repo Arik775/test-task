@@ -19,6 +19,7 @@
       </div>
     </div>
 
+    <hr style="opacity: 0">
     <div class="row">
       <button class="add-btn" (click)="openModal(input)">Добавить текстовое поле</button>
       <button class="add-btn" (click)="openModal(number)">Добавить числовое поле</button>
@@ -167,7 +168,7 @@
                  id="choices3"
                  class="form-control"
                  name="choices"
-                 [(ngModel)]="testArray"
+                 [(ngModel)]="testField.choices"
           />
         </div>
       </form>
@@ -220,7 +221,7 @@
                  id="choices4"
                  class="form-control"
                  name="choices"
-                 [(ngModel)]="testArray"
+                 [(ngModel)]="testField.choices"
           />
         </div>
       </form>

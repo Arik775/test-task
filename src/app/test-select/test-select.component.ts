@@ -22,6 +22,10 @@ export class TestSelectComponent implements OnInit {
     isIncludeCheckAll: false
   }
 
+  get choicesArray() {
+    return this.compValues.choices?.split(',')
+  }
+
   ngOnInit(): void {
   }
 
